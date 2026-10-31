@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/js/bootstrap.min.js" integrity="sha512-nKXmKvJyiGQy343jatQlzDprflyB5c+tKCzGP3Uq67v+lmzfnZUi/ZT+fc6ITZfSC5HhaBKUIvr/nTLCV+7F+Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -123,9 +124,10 @@ position: absolute;
     background-color: rgb(82, 133, 0);
    }
    #firstcard{
+    
     position: absolute;
     top: 87%;
-    left: 15.5%;
+    left: 12%;
   border: 1px solid #ddd;
   background-color: #ffffff !important; 
   opacity: 1 !important;            
@@ -143,20 +145,21 @@ overflow: hidden;
 padding-right: 0%;
  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
    }
-   #twodoctor{
+   #twodoctor{border-radius: 20%;
+    font-size: 42px;
     height: 60px;
     width: 60px;
     margin: 8px;
     border-radius: 8px;
-    border: solid 4px gray;
+    border: solid 3px gray;
     position: absolute;
-    top: 16%;
+    top: 12%;
     left:4%
    }
    #secondcard{
         position: absolute;
     top: 87%;
-    left: 15.5%;
+    left: 42%;
   border: 1px solid #ddd;
   background-color: #ffffff !important; 
   opacity: 1 !important;            
@@ -173,6 +176,61 @@ padding-right: 0%;
 overflow: hidden;
 padding-right: 0%;
  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+   } 
+   #thirdcard{
+        position: absolute;
+    top: 87%;
+    left: 72%;
+  border: 1px solid #ddd;
+  background-color: #ffffff !important; 
+  opacity: 1 !important;            
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    border: 1px solid #ddd;
+    height: 200px;
+    width: 300px;
+    background-color: #ffffff;
+    opacity: 1;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    padding-left: 20px;
+overflow: hidden;
+padding-right: 0%;
+ box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+   } 
+       #dog{
+opacity: 0.4;
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    top: 0%;
+    left:0%
+}
+    #steth{
+opacity: 0.8;
+    height: 350px;
+    width: 350px;
+    position: absolute;
+    top: 0%;
+    left:0%
+}
+   #paw{
+
+opacity: 0.3;
+    height: 350px;
+    width: 350px;
+    position: absolute;
+    top: 0%;
+    left:0%
+   }
+   #paw-icon{
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    font-size: 50px;
+    border: 3px solid rgb(122, 122, 122);
+    border-radius: 10%;
+    height: 60px;
    }
 </style>
 </head>
@@ -224,7 +282,8 @@ padding-right: 0%;
 
     </div>
 <div id="firstcard">
- <img id="twodoctor" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPYW5KSVxd9T0GcQ3sjwksEt87kw-b_G474UNniRF5mw&s=10" alt="">
+    <img id="steth" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa2zDSWnmb2HLlF3X5ffTxkvG4DZ86RuK7EAkdy9d58w&s=10" alt="">
+ <i id="twodoctor" class="fa-solid fa-stethoscope" style="color: rgb(242, 123, 255);"></i>
  <h1 style="font-weight: bold;
  position: absolute;
  font-size:x-large;
@@ -237,11 +296,27 @@ padding-right: 0%;
 
 <div id="secondcard">
 <img id="paw" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDtJgf-4f4G4asjLu_XAGaIo4bM6uXa0DyBsaUcTCOTQ&s=10" alt="">
+ <i  id="paw-icon" class="fa-solid fa-paw" style="color: rgb(242, 123, 255);"></i>
  <h1 style="font-weight: bold;
  position: absolute;
  font-size:x-large;
  top:2%;
  left:28% ;">Pet Grooming</h1>
+ <p style=" position: absolute;
+ top:40%;
+ left:35% ;">Discuss your questions <br> with a qualified provider<br> before arranging a care<br> consultation.</p>
+</div>
+</div>
+
+</div>
+<div id="thirdcard">
+<img id="dog" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuqcApW4tj4RTqLgjp0vd0kkIFOCtmzUbaaUODFKbgDg&s=10" alt="">
+ <i  id="dog-icon" class="fa-solid fa-dog" style="color: rgb(242, 123, 255);"></i>
+ <h1 style="font-weight: bold;
+ position: absolute;
+ font-size:x-large;
+ top:2%;
+ left:28% ;">Pet Boarding</h1>
  <p style=" position: absolute;
  top:40%;
  left:35% ;">Discuss your questions <br> with a qualified provider<br> before arranging a care<br> consultation.</p>
